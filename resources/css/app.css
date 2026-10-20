@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source "../**/*.blade.php";
+@source "../**/*.js";
+
+@theme {
+    --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
+
+    --color-brand: #f58220; /* oranye utama */
+    --color-brand-hover: #e06f0f;
+    --color-brand-dark: #c2570c; /* oranye gelap untuk teks kecil */
+    --color-leaf: #2f6e10; /* hijau */
+    --color-leaf-tint: #e4f3e0;
+    --color-cream: #fff8f0;
+    --color-peach: #ffe8d1;
+    --color-peach-soft: #ffefdf;
+    --color-ink: #1a1a1a;
+    --color-muted: #6b6b6b;
+    --color-line: #f1e3d3;
+
+    --shadow-card: 0 8px 24px rgba(194, 87, 12, 0.08);
+}

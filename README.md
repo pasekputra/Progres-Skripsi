@@ -62,4 +62,20 @@ Telah dilakukan hari ini:
 -   ✅ Error `SQLSTATE[42S02] Table 'project-skripsi.sessions' doesn't exist` - DISOLUSI
 -   ✅ Error `InvalidArgumentException - Unable to locate a class or view for component [user.container]` - DISOLUSI
 -   ✅ Error `InvalidArgumentException - Unable to locate a class or view for component [user.button]` - DISOLUSI
+-   ✅ Error `InvalidArgumentException - Unable to locate a class or view for component [user.auth.input]` - DISOLUSI (dipindahkan `resources/views/user/auth/` ke `resources/views/components/user/auth/`)
 -   ✅ Model Motor, Resource, Views, Controller sudah konsisten dan kerja
+
+### Komponen Blade (Update Terbaru)
+
+-   `resources/views/components/user/auth/input.blade.php` - **Dipindahkan** dari `resources/views/user/auth/` ke folder komponen Laravel 13 agar `<x-user.auth.input>` berjalan tanpa error
+-   ✅ Error `Unable to locate a class or view for component [user.auth.input]` - DISOLUSI (dengan pindah folder & `php artisan view:clear`)
+
+### Migrasi Terbaru
+
+-   Tabel `sessions` dibuat melalui migration `2026_10_16_051948_sessions.php` dengan schema:
+    -   `id` (primary string)
+    -   `user_id` (unsignedBigInteger, nullable)
+    -   `ip_address` (string 45, nullable)
+    -   `user_agent` (text, nullable)
+    -   `payload` (text)
+    -   `last_activity` (integer unsigned)

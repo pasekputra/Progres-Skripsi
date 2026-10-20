@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#F3E6D8"/>
+  <g fill="none" stroke="#C2570C" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity=".45">
+    <circle cx="120" cy="190" r="38"/>
+    <circle cx="290" cy="190" r="38"/>
+    <path d="M120 190 L170 120 H235 L290 190 M170 120 L200 190 H250 M235 120 L222 98 H250"/>
+  </g>
+  <text x="200" y="262" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#C2570C" opacity=".7">Foto motor belum tersedia</text>
+</svg>
