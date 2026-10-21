@@ -11,12 +11,12 @@ return [
     'kontak' => [
         'alamat'          => 'Br. Tohjiwa, Nyambu, Kediri, Tabanan, Bali',
         'maps'            => 'https://maps.app.goo.gl/tbGvf156tCnhq5E76',
-        'telepon'         => '087810179370',
+        'telepon'         => '087860175882',
         'email'           => 'putriayurentbike@gmail.com',
         'jam_operasional' => 'Senin – Minggu, 07.00 – 21.00 WIB',
         'jam_buka'        => 7,
         'jam_tutup'       => 21,
-        'whatsapp'        => '6287810179370',
+        'whatsapp'        => '6287860175882',
     ],
 
     'sosmed' => [

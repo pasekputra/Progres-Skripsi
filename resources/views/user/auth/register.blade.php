@@ -47,15 +47,15 @@
           @if ($aksi === '#') onsubmit="event.preventDefault(); alert('Tampilan saja: proses pendaftaran belum dibuat.');" @endif>
         @csrf
 
-        <x-user.auth.input label="Nama lengkap" name="nama" placeholder="Nama sesuai identitas" autocomplete="name" />
-        <x-user.auth.input label="Email" name="email" type="email" placeholder="nama@email.com" autocomplete="email" />
-        <x-user.auth.input label="Nomor WhatsApp" name="whatsapp" type="tel" placeholder="08xxxxxxxxxx" autocomplete="tel"
+        <x-user.input label="Nama lengkap" name="nama" placeholder="Nama sesuai identitas" autocomplete="name" />
+        <x-user.input label="Email" name="email" type="email" placeholder="nama@email.com" autocomplete="email" />
+        <x-user.input label="Nomor WhatsApp" name="whatsapp" type="tel" placeholder="08xxxxxxxxxx" autocomplete="tel"
                       hint="Dipakai untuk menghubungi kamu terkait pesanan." />
-        <x-user.auth.input label="Alamat" name="alamat" type="textarea" placeholder="Alamat tempat tinggal" autocomplete="street-address" />
+        <x-user.input label="Alamat" name="alamat" type="textarea" placeholder="Alamat tempat tinggal" autocomplete="street-address" />
 
         <div class="grid gap-5 sm:grid-cols-2">
-            <x-user.auth.input label="Kata sandi" name="password" type="password" placeholder="Minimal 8 karakter" autocomplete="new-password" />
-            <x-user.auth.input label="Ulangi kata sandi" name="password_confirmation" type="password" placeholder="Ketik ulang" autocomplete="new-password" />
+            <x-user.input label="Kata sandi" name="password" type="password" placeholder="Minimal 8 karakter" autocomplete="new-password" />
+            <x-user.input label="Ulangi kata sandi" name="password_confirmation" type="password" placeholder="Ketik ulang" autocomplete="new-password" />
         </div>
 
         <button type="submit"

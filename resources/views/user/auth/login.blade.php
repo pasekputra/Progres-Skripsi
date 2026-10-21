@@ -53,8 +53,8 @@
           @if ($aksi === '#') onsubmit="event.preventDefault(); alert('Tampilan saja: proses login belum dibuat.');" @endif>
         @csrf
 
-        <x-user.auth.input label="Email" name="email" type="email" placeholder="nama@email.com" autocomplete="email" />
-        <x-user.auth.input label="Kata sandi" name="password" type="password" placeholder="Masukkan kata sandi" autocomplete="current-password" />
+        <x-user.input label="Email" name="email" type="email" placeholder="nama@email.com" autocomplete="email" />
+        <x-user.input label="Kata sandi" name="password" type="password" placeholder="Masukkan kata sandi" autocomplete="current-password" />
 
         <label class="flex items-center gap-2.5 text-sm text-muted">
             <input type="checkbox" name="remember" class="size-4 rounded border-line accent-brand">

@@ -14,13 +14,13 @@
     @stack('styles')
 </head>
 <body class="bg-white font-sans text-ink antialiased">
-    @include('user.navbar')
+    @include('user.partials.navbar')
 
     <main>
         @yield('content')
     </main>
 
-    @include('user.footer')
+    @include('user.partials.footer')
 
     {{-- Ikon Lucide (versi dikunci agar tampilan stabil) --}}
     <script src="https://unpkg.com/lucide@0.263.1/dist/umd/lucide.min.js"></script>

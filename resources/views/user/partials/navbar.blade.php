@@ -13,7 +13,7 @@
     <x-user.container class="grid h-20 grid-cols-[auto_1fr] items-center lg:grid-cols-[1fr_auto_1fr]">
 
         {{-- Logo --}}
-        @include('user.brand')
+        @include('user.partials.brand')
 
         {{-- Menu tengah (desktop) --}}
         <nav class="hidden gap-9 lg:flex" aria-label="Menu utama">
@@ -71,8 +71,8 @@
                     </div>
                 </div>
             @else
-                <x-user.button :href="Route::has('login') ? route('login') : '#'" variant="outline" size="sm" class="hidden lg:inline-flex">Masuk</x-user.button>
-                <x-user.button :href="Route::has('register') ? route('register') : '#'" size="sm" class="hidden lg:inline-flex">Daftar</x-user.button>
+                <x-user.button :href="Route::has('user.auth.login') ? route('user.auth.login') : '#'" variant="outline" size="sm" class="hidden lg:inline-flex">Masuk</x-user.button>
+                <x-user.button :href="Route::has('user.auth.register') ? route('user.auth.register') : '#'" size="sm" class="hidden lg:inline-flex">Daftar</x-user.button>
             @endauth
 
             <button type="button" id="burgerBtn" aria-label="Buka menu" aria-expanded="false"
@@ -94,8 +94,8 @@
 
         @guest
             <div class="mt-4 flex gap-2.5">
-                <x-user.button :href="Route::has('login') ? route('login') : '#'" variant="outline" class="flex-1">Masuk</x-user.button>
-                <x-user.button :href="Route::has('register') ? route('register') : '#'" class="flex-1">Daftar</x-user.button>
+                <x-user.button :href="Route::has('user.auth.login') ? route('user.auth.login') : '#'" variant="outline" class="flex-1">Masuk</x-user.button>
+                <x-user.button :href="Route::has('user.auth.register') ? route('user.auth.register') : '#'" class="flex-1">Daftar</x-user.button>
             </div>
         @endguest
     </nav>

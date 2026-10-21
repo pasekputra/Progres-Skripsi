@@ -71,7 +71,7 @@ class UserController extends Controller
  
         $daftarKategori = Kategori::orderBy('nama')->get();
  
-        return view('user.motor', compact('motors', 'search', 'sort', 'kategoriId', 'daftarKategori'));
+        return view('user.motor.index', compact('motors', 'search', 'sort', 'kategoriId', 'daftarKategori'));
     }
  
     // Menampilkan detail satu motor
@@ -89,7 +89,7 @@ class UserController extends Controller
             ->limit(4)
             ->get();
  
-        return view('user.motor_detail', compact('motor', 'relatedMotors'));
+        return view('user.motor.show', compact('motor', 'relatedMotors'));
     }
 
 

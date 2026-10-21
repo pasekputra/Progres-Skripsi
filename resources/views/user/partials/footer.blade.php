@@ -8,7 +8,7 @@
         <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr_1.3fr]">
 
             <div>
-                @include('user.brand')
+                @include('user.partials.brand')
                 <p class="mb-[18px] mt-3.5 max-w-[300px] text-[13px] text-muted">
                     Teman perjalanan terpercaya untuk menjelajahi Bali dengan aman, nyaman, dan tanpa ribet.
                 </p>
