@@ -1,4 +1,4 @@
-@extends('layouts.auth_layout')
+@extends('layouts.auth_user_layout')
 
 @section('title', 'Masuk | ' . config('rental.nama'))
 
@@ -69,7 +69,7 @@
 
     <p class="mt-7 text-center text-sm text-muted">
         Belum punya akun?
-        <a href="{{ Route::has('register') ? route('register') : '#' }}" class="font-semibold text-brand-dark hover:text-brand">Daftar sekarang</a>
+        <a href="{{ Route::has('register') ? route('user.auth.register') : '#' }}" class="font-semibold text-brand-dark hover:text-brand">Daftar sekarang</a>
     </p>
     <p class="mt-2 text-center text-sm text-muted">
         atau <a href="{{ route('user.motor') }}" class="font-semibold text-brand-dark hover:text-brand">lihat daftar motor dulu</a>

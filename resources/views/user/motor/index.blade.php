@@ -37,6 +37,13 @@
     <section class="relative z-[1] pb-16 pt-10 sm:pb-24">
         <x-user.container>
 
+
+
+            {{-- <h1>
+Putri Ayu Rent Bike
+
+            </h1> --}}
+
             {{-- ===================== PENCARIAN & FILTER ===================== --}}
             <form method="GET" action="{{ route('user.motor') }}"
                   class="grid gap-3 rounded-[20px] border border-line bg-white p-4 shadow-card sm:grid-cols-[1fr_auto] lg:grid-cols-[1fr_210px_auto]">

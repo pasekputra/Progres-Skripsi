@@ -1,4 +1,4 @@
-@extends('layouts.auth_layout')
+@extends('layouts.auth_user_layout')
 
 @section('title', 'Daftar | ' . config('rental.nama'))
 
