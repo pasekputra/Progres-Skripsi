@@ -36,7 +36,7 @@ Telah dilakukan hari ini:
 2. ✅ resources/views/components/user/container.blade.php - dibuat: komponen Blade user.container
 3. ✅ resources/views/components/user/button.blade.php - dibuat: komponen Blade user.button
 4. ✅ Migrasi dijalankan: php artisan migrate → sessions table ter-create
-   ### Hari Ini Ditambahkan (2026-10-16)
+    ### Hari Ini Ditambahkan (2026-10-16)
 
 **Migrasi:**
 
@@ -73,9 +73,20 @@ Telah dilakukan hari ini:
 ### Migrasi Terbaru
 
 -   Tabel `sessions` dibuat melalui migration `2026_10_16_051948_sessions.php` dengan schema:
+
     -   `id` (primary string)
     -   `user_id` (unsignedBigInteger, nullable)
     -   `ip_address` (string 45, nullable)
     -   `user_agent` (text, nullable)
     -   `payload` (text)
     -   `last_activity` (integer unsigned)
+
+    <!-- user -->
+    <!-- yang belum -->
+    <!-- notifikasi -->
+    <!-- edit profile hanya bisa password saja  -->
+    <!-- melihat transaksi dan di sewa dan di kembalikan -->
+    <!-- sistem pembayran ke midtrans -->
+
+    <!-- baru selesai compiled code ui di side admin -->
+    <!-- running codingan di route karena ui sudah, control, and web.php -->
